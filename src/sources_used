@@ -1,0 +1,11 @@
+total 58004
+drwxrws---  3 panenthe panenthe     4096 Aug 20 17:55 .
+drwxrws--- 14 panenthe panenthe     4096 Aug 20 17:54 ..
+-rw-rw----  1 panenthe panenthe  6806786 Aug 18 18:37 httpd-2.2.11.tar.gz
+-rw-rw----  1 panenthe panenthe  2258772 Mar  5 08:28 ioncube_loaders_lin_x86.tar.gz
+-rw-rw----  1 panenthe panenthe 35152597 Aug 18 18:37 mysql-5.1.35.tar.gz
+-rw-rw----  1 panenthe panenthe 11433921 Aug 18 18:37 php-5.2.10.tar.gz
+-rw-rw----  1 panenthe panenthe  3640323 Aug 18 18:37 phpMyAdmin-3.2.0-all-languages.tar.gz
+-rw-rw-r--  1 root     panenthe        0 Aug 20 17:55 sources_used
+-rw-rw-r--  1 root     panenthe        7 Aug 20 17:54 sources_used.txt
+drwxrws---  6 panenthe panenthe     4096 Aug 20 17:02 .svn

@@ -1,0 +1,1 @@
+ALTER TABLE `ost` ADD `os_type` VARCHAR( 255 ) NOT NULL DEFAULT 'LINUX' AFTER `arch`;

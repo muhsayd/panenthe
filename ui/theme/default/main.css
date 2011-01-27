@@ -1,0 +1,446 @@
+/**
+ * Panenthe VPS Management
+ *
+ * This is NOT Free Software
+ * This software is NOT Open Source.
+ * Please see panenthe.com for more information.
+ *
+ * Use of this software is binding of a license agreement.
+ * This license agreeement may be found at panenthe.com
+ *
+ * Panenthe DOES NOT offer this software with any WARRANTY whatsoever.
+ * Panenthe DOES NOT offer this software with any GUARANTEE whatsoever.
+ *
+ * @copyright Panenthe, Nullivex LLC. All Rights Reserved.
+ * @author Nullivex LLC <contact@nullivex.com>
+ * @license http://www.panenthe.com
+ * @link http://www.panenthe.com
+ *
+ */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #646464;
+	text-align: center;
+}
+
+.debug_box {
+	border: 1px solid #aaa;
+	margin: 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+.v_middle {
+	vertical-align: middle;
+}
+
+.suspend_msg {
+	padding: 10px;
+	margin: 5px 10px 5px 10px;
+	border: 1px solid red;
+	font-color: DCDC00;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+img {
+	border: 0px;
+}
+
+a {
+	color: #128bf1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #54b1ff;
+}
+
+
+/* form elements */
+form {
+	margin:10px; padding: 0 5px;
+}
+
+input, select {
+	padding:3px;
+	border:1px solid #999;
+	font: normal 1em Verdana, sans-serif;
+	color:#333;
+}
+
+textarea {
+	width:400px;
+	padding:2px;
+	font: normal 1em Verdana, sans-serif;
+	border:1px solid #999;
+	height:100px;
+	display:block;
+	color:#333;
+}
+
+input.button { 
+	font: bold 12px Arial, Sans-serif; 
+	margin: 0;
+	color: #FFF;
+	padding: 4px 4px 3px;
+	background: #701212;
+	border: none;
+}
+
+input.checkbox {
+	background: none;
+	border: 0px;
+}
+
+fieldset {padding: 10px;}
+
+.text_left {text-align: left;}
+.text_center {text-align: center;}
+.text_right {text-align: right;}
+.float_left {float: left;}
+.float_right {float: right;}
+.clear_both {clear: both;}
+
+#wrapper_content {
+	width: 1000px;
+	margin: auto auto;
+	text-align: left;
+}
+
+.admin_topbar {
+	background: #444;
+	line-height: 25px;
+	color: #f1f1f1;
+	padding: 0px 5px;
+	text-align: left;
+	font-size: 11px;
+	font-family: verdana;
+}
+
+.admin_topbar a{
+	color: #fff;
+}
+
+.admin_topbar a:hover {
+	text-decoration: underline;
+}
+
+.admin_header {
+	height: 75px;
+}
+
+.admin_header_logo {
+	width: 648px;
+	height: 75px;
+}
+
+#header_title {
+	color: #293348;
+	font-family: arial, tahoma, sans-serif;
+}
+
+#header_title h1#logo-text a {
+	margin: 0; padding: 0;
+	font: bold 40px 'Trebuchet MS', Arial, Sans-serif;
+	letter-spacing: -2.5px;
+	color: #701212;
+	text-decoration: none;
+	
+	/* change the values of top and left to adjust the position of the logo*/
+	padding-top: 0px; padding-left: 10px;	
+}
+
+#header_title h1#logo-text span {
+	color: #2C3A54;
+}
+
+#header_title h2#slogan {
+	margin: 0; padding: 0;
+	font: bold 12px 'Trebuchet MS', Arial, Sans-serif;
+	text-transform: none;
+	color: #444;
+	
+	/* change the values of top and left to adjust the position of the slogan*/
+	margin-top: -10px; padding-left: 85px;		
+}
+
+#header_subtitle {
+	color: #333333;
+	padding: 0px 0px 0px 20px;
+	margin-top: -8px;
+	font-size: 16px;
+	font-family: arial, tahoma, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.header_date {
+	padding: 20px 20px 0px 0px;
+	color: #293348;
+	font-size: 12px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.header_time {
+	padding-right: 20px;
+	color: #293348;
+	font-style: italic;
+	font-size: 20px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.admin_navbar {
+	height: 37px;
+	background: #f6f6f6;
+	border: 5px solid #eee;
+}
+
+.admin_navbar a {
+	display: block;
+	float: left;
+	height: 37px;
+	font-weight: bold;
+	line-height: 37px;
+	text-decoration: none;
+	color: #646464;
+	padding: 0 20px;
+	border-right: 1px solid #ddd;
+}
+
+.admin_navbar a:hover {
+	background: #fdfcf6;
+}
+
+a.admin_navbar_selected {
+	background: #f0f0f0 url(img/top-menu-item-bg.gif) repeat-x left top;
+	color: #454545;
+}
+
+.admin_sub_bar {
+	padding-left: 20px;
+	height: 30px;
+	background: #E5E5E5;
+}
+
+.admin_sub_bar a{
+	float: left;
+	padding: 0px 10px;
+	margin: 0px 2px;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+.admin_sub_bar a:hover{
+	background: #fdfcf6;
+}
+
+
+/* Sidebar ---------------------------------------- */
+
+#sidebar {
+	width: 179px;
+	background: #f6f6f6 url("images/sidebar_bg.jpg") repeat-y top right;
+}
+
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar .sideNav { width: 179px; }
+
+#sidebar .sideNav li { border-bottom: 1px solid #ddd; width: 179px; }
+
+#sidebar .sideNav li a {
+	display: block;
+	color: #646464;
+	background: #f6f6f6;
+	text-decoration: none;
+	height: 29px;
+	line-height: 29px;
+	padding: 0 19px;
+	width: 140px;
+	border-right: 1px solid #ddd;
+}
+
+#sidebar .sideNav li a:hover { background: #fdfcf6; }
+
+#sidebar .sideNav li a.admin_subbar_selected, #sidebar .sideNav li a.admin_subbar_selected:hover {
+	background: #fff;
+	border-right: 1px solid #fff;
+	color: #c66653;
+	font-weight: bold;
+}
+
+.main_content {
+
+}
+
+.main_content fieldset {
+	border: 1px solid #ddd;
+	margin: 0px 0px 20px 0px;
+}
+
+.main_content legend {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #5494af;
+}
+
+.admin_content {
+	text-align: left;
+	border: 5px solid #eee;
+	margin: 5px 0px;
+}
+
+.subbar_icon {
+	vertical-align: middle;
+}
+
+.title {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #5494af;
+	margin: 0px 10px;
+	padding: 12px;
+	border-bottom: 1px solid #ddd;
+}
+
+.title a {
+	color: #5494af;
+}
+
+.title a:hover {
+	text-decoration: underline;
+}
+
+.table_desc {
+	background: #444;
+	color: #fff;
+	font-weight: bold;
+}
+
+.table_search {
+	background: #ddd;
+	color: #222;
+}
+
+.body {
+	padding: 10px;
+	text-align: left;
+}
+
+.body p, .body td {
+	padding: 10px 10px;
+}
+
+.even {
+	background: #f9f9f9;
+}
+
+.odd {
+	background: #efefef;
+}
+
+.highlighted {
+	background: #e3ffd2;
+}
+
+.odd .highlighted {
+	background: #b3e892;
+}
+
+.stats_table {
+	background: #999;
+	height: 10px;
+	border: 1px solid #aaa;
+	width: 100%;
+}
+
+.stats_table td.used{
+	background: #b3e892;
+}
+
+.stats_table td {
+	padding: 0px;
+}
+
+.message {
+	background: #f0e8bf;
+	padding: 5px;
+	border: 1px solid #d2c685;
+	color: #ff0000;
+	margin: 10px 10px;
+}
+
+div.even, div.odd {
+	padding: 10px;
+}
+
+.feature_block {
+	width: 125px;
+	height: 60px;
+	/*background: #f7f7f7;
+	border: 1px dashed #888888;*/
+	text-align: center;
+	padding: 10px 10px;
+	float: left;
+	margin: 5px;
+}
+
+.feature_block img {
+	/*width: 45px;*/
+}
+
+.scale_block img {
+	width: 48px;
+}
+
+.admin_footer {
+	text-align: center;
+	color: #777;
+	font-size: 12px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+.admin_footer a {
+	color: #444;
+	text-decoration: none;
+}
+
+.admin_footer a:hover {
+	text-decoration: underline;
+}
+
+input[type=checkbox] {
+	border: 1px solid black;
+}
+
+.log_area {
+	width: 100%;
+	height: 200px;
+} 

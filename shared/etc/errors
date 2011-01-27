@@ -1,0 +1,124 @@
+# 00: GENERAL ERRORS
+0000 | NORMAL | ERR_SUCCESS | The command succeeded. | http://docs.panenthe.com/index.php/ERR_ERR_SUCCESS
+0001 | FATAL | ERR_TAR_FAILED | The tar command failed to execute. | http://docs.panenthe.com/index.php/ERR_ERR_TAR_FAILED
+0002 | FATAL | ERR_GZIP_FAILED | The gzip command failed to execute. | http://docs.panenthe.com/index.php/ERR_ERR_GZIP_FAILED
+0003 | FATAL | ERR_SCP_FAILED | The scp command failed to execute. | http://docs.panenthe.com/index.php/ERR_ERR_SCP_FAILED
+0004 | NORMAL | ERR_QUEUED | The command has been queued.  You will receive an event when the task has completed. | http://docs.panenthe.com/index.php/ERR_ERR_QUEUED
+0005 | FATAL | ERR_QUEUE_FAILED | The command failed to enter the command queue. | http://docs.panenthe.com/index.php/ERR_ERR_QUEUE_FAILED
+0006 | FATAL | ERR_QUEUE_DEP_FAILED | The command's dependency failed to execute. | http://docs.panenthe.com/index.php/ERR_ERR_QUEUE_DEP_FAILED
+0007 | NORMAL | ERR_QUEUE_IDLE | The command queue is now idle. | http://docs.panenthe.com/index.php/ERR_ERR_QUEUE_IDLE
+
+# 01: GENERAL BACKEND ERRORS
+0100 | FATAL | BACKEND_INVALID_INPUT | The UI provided invalid input to the backend. | http://docs.panenthe.com/index.php/ERR_BACKEND_INVALID_INPUT
+0101 | FATAL | BACKEND_NOT_DEFINED_YET | Not defined yet. | http://docs.panenthe.com/index.php/ERR_BACKEND_NOT_DEFINED_YET
+0102 | FATAL | BACKEND_ERR_UNKNOWN | The backend code returned an unknown error. | http://docs.panenthe.com/index.php/ERR_BACKEND_ERR_UNKNOWN
+0103 | FATAL | BACKEND_NOT_IMPLEMENTED | This function is not available for the driver being used. | http://docs.panenthe.com/index.php/ERR_BACKEND_NOT_IMPLEMENTED
+
+# 02: PHP ERRORS
+0200 | WARNING | PHP_ERR_UNKNOWN | An unknown PHP error occurred. | http://docs.panenthe.com/index.php/ERR_PHP_ERR_UNKNOWN
+0201 | FATAL | PHP_FILE_NOT_FOUND | No such file or directory (PHP). | http://docs.panenthe.com/index.php/ERR_PHP_FILE_NOT_FOUND
+0202 | FATAL | PHP_DATABASE_FAIL | A database call failed from within the PHP bridge. | http://docs.panenthe.com/index.php/ERR_PHP_DATABASE_FAIL
+
+# 03: PYTHON ERRORS
+0300 | WARNING | PY_UNCAUGHT_EXCEPTION | An uncaught Python exception was thrown. | http://docs.panenthe.com/index.php/ERR_PY_UNCAUGHT_EXCEPTION
+
+# 04: DRIVER ERRORS
+0400 | WARNING | DRIVER_ERR_UNKNOWN | An unknown driver error occurred. | http://docs.panenthe.com/index.php/ERR_DRIVER_ERR_UNKNOWN
+0401 | FATAL | DRIVER_NOT_FOUND | The driver specified was not found. | http://docs.panenthe.com/index.php/ERR_DRIVER_NOT_FOUND
+0402 | FATAL | DRIVER_METHOD_NOT_SUPPORTED | The method called does not exist. | http://docs.panenthe.com/index.php/ERR_DRIVER_METHOD_NOT_SUPPORTED
+0403 | FATAL | DRIVER_START_FAIL | The driver failed to start. | http://docs.panenthe.com/index.php/ERR_DRIVER_START_FAIL
+0404 | FATAL | DRIVER_STOP_FAIL | The driver failed to stop. | http://docs.panenthe.com/index.php/ERR_DRIVER_STOP_FAIL
+0405 | FATAL | DRIVER_RESTART_FAIL | The driver failed to restart. | http://docs.panenthe.com/index.php/ERR_DRIVER_RESTART_FAIL
+0406 | FATAL | DRIVER_STATUS_FAIL | The server failed to ping the status of the driver. | http://docs.panenthe.com/index.php/ERR_DRIVER_STATUS_FAIL
+0407 | NOTICE | DRIVER_STATUS_STARTED | The driver is started on the server. | http://docs.panenthe.com/index.php/ERR_DRIVER_STATUS_STARTED
+0408 | NOTICE | DRIVER_STATUS_STOPPED | The driver is stopped on the server. | http://docs.panenthe.com/index.php/ERR_DRIVER_STATUS_STOPPED
+0409 | NOTICE | DRIVER_STATUS_NOT_INSTALLED | The driver is not installed on the server. | http://docs.panenthe.com/index.php/ERR_DRIVER_STATUS_NOT_INSTALLED
+040A | NOTICE | DRIVER_STATUS_NOT_ACTIVATED | The driver is not activated on the server. | http://docs.panenthe.com/index.php/ERR_DRIVER_STATUS_NOT_ACTIVATED
+040B | NOTICE | DRIVER_OS_NOT_SUPPORTED | The operating system of this server is not supported by Panenthe. | http://docs.panenthe.com/index.php/ERR_DRIVER_OS_NOT_SUPPORTED
+040C | FATAL | DRIVER_INSTALL_FAIL | The installation of the driver failed. | http://docs.panenthe.com/index.php/ERR_DRIVER_INSTALL_FAIL
+040D | WARNING | DRIVER_ALREADY_INSTALLED | The driver is already installed on this server. | http://docs.panenthe.com/index.php/ERR_DRIVER_ALREADY_INSTALLED
+040E | FATAL | DRIVER_UNINSTALL_FAIL | The un-installation of the driver failed. | http://docs.panenthe.com/index.php/ERR_DRIVER_UNINSTALL_FAIL
+040F | FATAL | DRIVER_NO_AFTER_EXEC | The important driver file "q_after_exec" was not found or could not be loaded correctly. | http://docs.panenthe.com/index.php/ERR_DRIVER_NO_AFTER_EXEC
+
+# 05: OVZ ERRORS
+0500 | WARNING | OVZ_ERR_UNKNOWN | An unknown error with OpenVZ occurred. | http://docs.panenthe.com/index.php/ERR_OVZ_ERR_UNKNOWN
+0502 | NOTICE | OVZ_PRIVATEAREA_EXISTS | Private area already exists. | http://docs.panenthe.com/index.php/ERR_OVZ_PRIVATEAREA_EXISTS
+0503 | FATAL | OVZ_CONFIG_DOES_NOT_EXIST | Container config file does not exist. | http://docs.panenthe.com/index.php/ERR_OVZ_CONFIG_DOES_NOT_EXIST
+0504 | FATAL | OVZ_BAD_COMMAND | vzctl reported bad command. | http://docs.panenthe.com/index.php/ERR_OVZ_BAD_COMMAND
+0505 | WARNING | OVZ_NOT_RUNNING | Container is not running. | http://docs.panenthe.com/index.php/ERR_OVZ_NOT_RUNNING
+0506 | FATAL | OVZ_ADDRESS_IN_USE | Address given is in use. | http://docs.panenthe.com/index.php/ERR_OVZ_ADDRESS_IN_USE
+0509 | WARNING | OVZ_CURRENTLY_LOCKED | Container is currently locked. | http://docs.panenthe.com/index.php/ERR_OVZ_CURRENTLY_LOCKED
+050B | FATAL | OVZ_FILE_NOT_FOUND | vzctl returned that the file was not found. | http://docs.panenthe.com/index.php/ERR_OVZ_FILE_NOT_FOUND
+050C | FATAL | OVZ_INVALID_INPUT | Invalid input was passed to vzctl. | http://docs.panenthe.com/index.php/ERR_OVZ_INVALID_INPUT
+050D | FATAL | OVZ_SSH_CONNECTION_FAILURE | SSH connection to slave server failed. | http://docs.panenthe.com/index.php/ERR_OVZ_SSH_CONNECTION_FAILURE
+050E | FATAL | OVZ_CONTAINER_MOUNTED | Container is currently mounted. | http://docs.panenthe.com/index.php/ERR_OVZ_CONTAINER_MOUNTED
+050F | FATAL | OVZ_VM_LISTING | Error retrieving VM listing. | http://docs.panenthe.com/index.php/ERR_OVZ_VM_LISTING
+0511 | FATAL | OVZ_GENERATE_REAL_ID | The host could not successfully generate an ID for the container. | http://docs.panenthe.com/index.php/ERR_OVZ_GENERATE_REAL_ID
+0512 | NOTICE | OVZ_ALREADY_RUNNING | The container has already been started. The call is ignored. | http://docs.panenthe.com/index.php/ERR_OVZ_ALREADY_RUNNING
+
+# 06: LIVE UPDATE ERRORS
+0600 | WARNING | LIVEUP_ERR_UNKNOWN | An unknown error with a bash script occurred. | http://docs.panenthe.com/index.php/ERR_LIVEUP_ERR_UNKNOWN
+0601 | FATAL | LIVEUP_SVN_FAILURE | A bash script received an SVN failure error. | http://docs.panenthe.com/index.php/ERR_LIVEUP_SVN_FAILURE
+0602 | FATAL | LIVEUP_REV_UPDATE | A bash script received an error when trying to run a version specific update script. | http://docs.panenthe.com/index.php/ERR_LIVEUP_REV_UPDATE
+
+# 07: SERVER ERRORS
+0700 | WARNING | SERVER_ERR_UNKNOWN | An unknown error has occurred with the server driver. | http://docs.panenthe.com/index.php/ERR_SERVER_ERR_UNKNOWN
+0701 | FATAL | SERVER_PRIVATE_KEY_NOT_FOUND | The private key was not found, but the public key was, so the keys could not be removed successfully. | http://docs.panenthe.com/index.php/ERR_SERVER_PRIVATE_KEY_NOT_FOUND
+0702 | FATAL | SERVER_MKDIR_ERROR | Could not create a core directory on the server. | http://docs.panenthe.com/index.php/ERR_SERVER_MKDIR_ERROR
+0703 | FATAL | SERVER_SSH_KEYGEN | Could not generate the SSH private key. | http://docs.panenthe.com/index.php/ERR_SERVER_SSH_KEYGEN
+0704 | FATAL | SERVER_REMOTE_KEYSCAN | Could not retrieve remote key. | http://docs.panenthe.com/index.php/ERR_SERVER_SSH_KEYGEN
+0705 | FATAL | SERVER_REMOTE_KEYCOPY | Could not copy the SSH key over. | http://docs.panenthe.com/index.php/ERR_SERVER_REMOTE_KEYCOPY
+0706 | FATAL | SERVER_REMOTE_REMOVE | Could not remove remote key. | http://docs.panenthe.com/index.php/ERR_SERVER_REMOTE_REMOVE
+0707 | FATAL | SERVER_SSH_PORTCHANGE | Could not change the SSH port. | http://docs.panenthe.com/index.php/ERR_SERVER_SSH_PORTCHANGE
+0708 | WARNING | SERVER_CPUINFO | Could not retrieve CPU information. | http://docs.panenthe.com/index.php/ERR_SERVER_CPUINFO
+0709 | WARNING | SERVER_MEMINFO | Could not retrieve memory information. | http://docs.panenthe.com/index.php/ERR_SERVER_MEMINFO
+070A | WARNING | SERVER_UPTIME | Could not retrieve system uptime. | http://docs.panenthe.com/index.php/ERR_SERVER_UPTIME
+070B | WARNING | SERVER_DISKUSAGE | Could not retrieve disk usage information. | http://docs.panenthe.com/index.php/ERR_SERVER_DISKUSAGE
+070C | FATAL | SERVER_IPTABLES | Could not modify iptables packet filtering rules. | http://docs.panenthe.com/index.php/ERR_SERVER_IPTABLES
+070D | FATAL | SERVER_SHUTDOWN | Could not execute the shutdown command on the server. | http://docs.panenthe.com/index.php/ERR_SERVER_SHUTDOWN
+070E | FATAL | SERVER_PASSWD | Could not execute the passwd command on the server. | http://docs.panenthe.com/index.php/ERR_SERVER_PASSWD
+070F | FATAL | SERVER_INVALID_PASSWORD | The password provided was incorrect. | http://docs.panenthe.com/index.php/ERR_SERVER_INVALID_PASSWORD
+0710 | FATAL | SERVER_NO_ROUTE_TO_HOST | Could not determine a route to the host when trying to connect to it. | http://docs.panenthe.com/index.php/ERR_SERVER_NO_ROUTE_TO_HOST
+0711 | FATAL | SERVER_COULD_NOT_RESOLVE | Could not resolve hostname when trying to connect to server. | http://docs.panenthe.com/index.php/ERR_SERVER_COULD_NOT_RESOLVE
+0712 | NOTICE | SERVER_KEY_ALREADY_INSTALLED | The server's key is already installed. | http://docs.panenthe.com/index.php/ERR_SERVER_KEY_ALREADY_INSTALLED
+0713 | FATAL | SERVER_LIST_IMAGES | Could not find a listing of kernel images. | http://docs.panenthe.com/index.php/ERR_SERVER_LIST_IMAGES
+0714 | FATAL | SERVER_FILE_NOT_FOUND | Could not find a file critical to this operation. | http://docs.panenthe.com/index.php/ERR_SERVER_FILE_NOT_FOUND
+
+# 08: API ERRORS
+0800 | WARNING | API_ERR_UNKNOWN | An unknown error has occurred when trying to interface with the database API. | http://docs.panenthe.com/index.php/ERR_API_ERR_UNKNOWN
+0801 | FATAL | API_UNKNOWN_FUNCTION | An unknown API function was attempted to be called. | http://docs.panenthe.com/index.php/ERR_API_UNKNOWN_FUNCTION
+
+# 09: VPS ERRORS
+0900 | FATAL | VPS_ERR_UNKNOWN | Unknown VPS error. | http://docs.panenthe.com/index.php/ERR_VPS_ERR_UNKNOWN
+0901 | NORMAL | VPS_STATUS_RUNNING | Driver queried and returned that it was running. | http://docs.panenthe.com/index.php/ERR_VPS_STATUS_RUNNING
+0902 | NORMAL | VPS_STATUS_STOPPED | Driver queried and returned that it was stopped. | http://docs.panenthe.com/index.php/ERR_VPS_STATUS_STOPPED
+0903 | NORMAL | VPS_STATUS_DELETED | Driver queried and returned that it was deleted. | http://docs.panenthe.com/index.php/ERR_VPS_STATUS_DELETED
+0904 | NORMAL | VPS_UNKNOWN_DISTRO | Driver could not determine the linux distribution of the server. | http://docs.panenthe.com/index.php/ERR_VPS_UNKNOWN_DISTRO
+
+# 0A: XEN ERRORS
+0A00 | FATAL | XEN_ERR_UNKNOWN | Unknown Xen error. | http://docs.panenthe.com/index.php/ERR_XEN_ERR_UNKNOWN
+0A01 | FATAL | XEN_VM_LISTING | Xen VM listing failed. | http://docs.panenthe.com/index.php/ERR_XEN_VM_LISTING
+0A02 | FATAL | XEN_GENERATE_REAL_ID | The host could not successfully generate an ID for the container. | http://docs.panenthe.com/index.php/ERR_XEN_GENERATE_REAL_ID
+0A03 | FATAL | XEN_COULDNT_REMOVE | The container could not be removed. | http://docs.pananthe.com/index.php/ERR_XEN_COULDNT_REMOVE
+0A04 | FATAL | XEN_DISK_FINALIZATION | The Xen container could not be finalized. | http://docs.panenthe.com/index.php/ERR_XEN_DISK_FINALIZATION
+OA05 | FATAL | XEN_DISK_CREATION | The Xen disk could not be created successfully. | http://docs.panenthe.com/index.php/ERR_XEN_DISK_CREATION
+0A06 | FATAL | XEN_DISK_READ | The Xen disk could not be read correctly. | http://docs.panenthe.com/index.php/ERR_XEN_DISK_READ
+0A07 | FATAL | XEN_MODIFY_CONFIG | The Xen config file could not be modified. | http://docs.panenthe.com/index.php/ERR_XEN_MODIFY_CONFIG
+0A08 | FATAL | XEN_DOMAIN_DOESNT_EXIST | The Xen domain doesn't exist. | http://docs.panenthe.com/index.php/ERR_XEN_DOMAIN_DOESNT_EXIST
+0A09 | FATAL | XEN_NAME_ALREADY_IN_USE | The Xen domain is already in use. | http://docs.panenthe.com/index.php/ERR_XEN_NAME_ALREADY_IN_USE
+0A0A | FATAL | XEN_DISK_COULDNT_RESIZE | The disk image could not be resized successfully. | http://docs.panenthe.com/index.php/ERR_XEN_DISK_COULDNT_RESIZE
+0A0B | FATAL | XEN_DISK_COULDNT_FSCK | The disk filesystem could not be successfully verified. | http://docs.panenthe.com/index.php/ERR_XEN_DISK_COULDNT_FSCK
+0A0C | NOTICE | XEN_CANT_SHRINK_DISK | The filesystem cannot shrink.  Please enter a number larger than the current filesystem disk space. | http://docs.panenthe.com/index.php/ERR_XEN_CANT_SHRINK_DISK
+0A0D | NOTICE | XEN_CANT_SHRINK_DISK | The filesystem cannot shrink.  Please enter a number larger than the current filesystem disk space. | http://docs.panenthe.com/index.php/ERR_XEN_CANT_SHRINK_DISK
+0A0D | FATAL | XEN_DAEMON_NOT_RUNNING | The Xen daemon process is not running on this server. | http://docs.panenthe.com/index.php/ERR_XEN_DAEMON_NOT_RUNNING
+0A0E | FATAL | XEN_MOVE_CONFIG | Could not rename the config for the Xen container. | http://docs.panenthe.com/index.php/ERR_XEN_MOVE_CONFIG
+0A0F | FATAL | XEN_UMOUNT_LOOP | Could not unmount some loopback files. | http://docs.panenthe.com/index.php/ERR_XEN_UMOUNT_LOOP
+0A10 | FATAL | XEN_MOUNT_LOOP | Could not mount the loopback files. | http://docs.panenthe.com/index.php/ERR_XEN_MOUNT_LOOP
+0A11 | FATAL | XEN_SET_DNS | Could not set the DNS on the virtual machine. | http://docs.panenthe.com/index.php/ERR_XEN_SET_DNS
+0A12 | FATAL | XEN_ADD_IP | Could not add the IP address to the virtual machine. | http://docs.panenthe.com/index.php/ERR_XEN_ADD_IP
+0A13 | FATAL | XEN_REMOVE_IP | Could not remove the IP address from the virtual machine. | http://docs.panenthe.com/index.php/ERR_XEN_REMOVE_IP
+0A14 | FATAL | XEN_SANITY_UMOUNT_FAIL | A umount call used as a sanity feature has failed.  This is generally a sign that your network config got really screwed up. | http://docs.panenthe.com/index.php/ERR_XEN_SANITY_UMOUNT_FAIL
+0A15 | NOTICE | XEN_IP_NOT_FOUND | Could not find the IP on the given host. | http://docs.panenthe.com/index.php/ERR_XEN_IP_NOT_FOUND
+0A16 | FATAL | XEN_RAM_CHECK_FAIL | Could not check the amount of RAM allocated on the server. | http://docs.panenthe.com/index.php/ERR_XEN_RAM_CHECK_FAIL
+0A17 | FATAL | XEN_OUT_OF_RAM | The server is out of RAM to create the VM. | http://docs.panenthe.com/index.php/ERR_XEN_OUT_OF_RAM
+0A18 | FATAL | XEN_UNSUPPORTED_SERVER | The hardware needed to execute the given command requires hardware that is not on the server. | http://docs.panenthe.com/index.php/ERR_XEN_UNSUPPORTED_SERVER

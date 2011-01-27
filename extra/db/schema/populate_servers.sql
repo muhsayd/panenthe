@@ -1,0 +1,51 @@
+INSERT INTO servers 
+(
+	server_id,
+	parent_server_id,
+	name,
+	datacenter,
+	ip,
+	hostname,
+	port,
+	created,
+	modified
+)
+VALUES
+(
+	1,
+	0,
+	"PanentheVM",
+	"Panenthe",
+	"__master_ip_address__",
+	"panenthe",
+	"__master_port__",
+	"__cmodtime__",
+	"__cmodtime__"
+);
+
+INSERT INTO servers 
+(
+	server_id,
+	parent_server_id,
+	name,
+	datacenter,
+	ip,
+	hostname,
+	port,
+	password,
+	created,
+	modified
+)
+VALUES
+(
+	2,
+	1,
+	"__slave_hostname__",
+	"__slave_hostname__",
+	"__slave_ip_address__",
+	"__slave_hostname__",
+	"__slave_port__",
+	"",
+	"__cmodtime__",
+	"__cmodtime__"
+);

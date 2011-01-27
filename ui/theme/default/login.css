@@ -1,0 +1,173 @@
+/**
+ * Panenthe VPS Management
+ *
+ * This is NOT Free Software
+ * This software is NOT Open Source.
+ * Please see panenthe.com for more information.
+ *
+ * Use of this software is binding of a license agreement.
+ * This license agreeement may be found at panenthe.com
+ *
+ * Panenthe DOES NOT offer this software with any WARRANTY whatsoever.
+ * Panenthe DOES NOT offer this software with any GUARANTEE whatsoever.
+ *
+ * @copyright Panenthe, Nullivex LLC. All Rights Reserved.
+ * @author Nullivex LLC <contact@nullivex.com>
+ * @license http://www.panenthe.com
+ * @link http://www.panenthe.com
+ *
+ */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background: #ffffff;
+	margin: 0px; padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+img {border: 0px;}
+
+a {
+	color: #128bf1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #54b1ff;
+}
+
+
+.float_right {
+	float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: auto auto;
+	text-align: left;
+}
+
+.admin_topbar {
+	background: #444;
+	line-height: 25px;
+	color: #f1f1f1;
+	padding: 0px 5px;
+	text-align: left;
+	font-size: 11px;
+	font-family: verdana;
+}
+
+.admin_topbar a{
+	color: #fff;
+}
+
+.admin_topbar a:hover {
+	text-decoration: underline;
+}
+
+.admin_header {
+	height: 75px;
+	border-bottom: 5px solid #eee;
+	margin-bottom: 50px;
+}
+
+.admin_header_logo {
+	width: 648px;
+	height: 75px;
+}
+
+#header_title {
+	color: #293348;
+	font-family: arial, tahoma, sans-serif;
+}
+
+#header_title h1#logo-text a {
+	position: absolute;
+	margin: 0; padding: 0;
+	font: bold 40px 'Trebuchet MS', Arial, Sans-serif;
+	letter-spacing: -2.5px;
+	color: #701212;
+	text-decoration: none;
+	
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 35px; padding-left: 10px;	
+}
+
+#header_title h1#logo-text span {
+	color: #2C3A54;
+}
+
+#header_title h2#slogan {
+	position: absolute;
+	margin: 0; padding: 0;
+	font: bold 12px 'Trebuchet MS', Arial, Sans-serif;
+	text-transform: none;
+	color: #444;
+	
+	/* change the values of top and left to adjust the position of the slogan*/
+	top: 70px; padding-left: 85px;		
+}
+
+#header_subtitle {
+	color: #333333;
+	padding: 0px 0px 0px 20px;
+	margin-top: -8px;
+	font-size: 16px;
+	font-family: arial, tahoma, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.login_table {
+	text-align: left;
+	margin: auto;
+	width: 500px;
+}
+
+.login_table td {
+	padding: 10px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.odd {
+	background: #f4f4f4;
+}
+
+.login_table .title {
+	text-align: left;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #5494af;
+	padding:10px;
+	border-bottom: 1px solid #ddd;;
+}
+
+.login_message {
+	width: 480px;
+	margin: auto;
+	background: #f6b5b5;
+	color: #9d3333;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #8c4949;
+}
+
+td.login_button {
+	border-bottom: 0px;
+	text-align: left;
+}
+
+td.forgot_password {
+	border-bottom: 0px;
+	text-align: right;
+}

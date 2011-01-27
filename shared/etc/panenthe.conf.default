@@ -1,0 +1,23 @@
+[main]
+root_dir = /opt/panenthe
+license_user =
+license_pass =
+
+[db]
+db_driver = mysql
+db_host = localhost
+db_port = 3306
+db_user = panenthe
+db_pass =
+db_name = panenthe
+db_prefix =
+
+[ui_config]
+url =
+ssl_url =
+login_url =
+ssl_login_url =
+
+[mail]
+default_from = noreply@localhost
+default_replyto = noreply@localhost
